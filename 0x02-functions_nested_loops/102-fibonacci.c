@@ -26,7 +26,7 @@ int main(void)
 
 	{
 
-		fb = n1 + n2;
+		fb = a + b;
 
 		printf(", %ld", fb);
 
