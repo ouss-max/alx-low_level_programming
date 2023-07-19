@@ -18,7 +18,7 @@ int main(void)
 
 	a = 1;
 
-	a = 2;
+	b = 2;
 
 	printf("%ld, %ld", a, b);
 
