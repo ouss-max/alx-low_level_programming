@@ -2,21 +2,23 @@
 #include <stdio.h>
 
 /**
- * _strcpy - copies the string pointed to by src
- * @new: destination.
- * @old: source.
- * Return: the pointer to new.
+ * _strcpy - copies the string pointed to by oarr,
+ * including the terminating null byte, to the
+ * buffer pointed to by narr.
+ * @narr: new array.
+ * @oarr: old array.
+ * Return: the pointer to narr.
  */
-char *_strcpy(char *new, char *old)
+char *_strcpy(char *narr, char *oarr)
 {
-	int i = 0;
+	int count = 0;
 
-	while (i >= 0)
+	while (count >= 0)
 	{
-		*(new + i) = *(old + count);
-		if (*(old + i) == '\0')
+		*(narr + count) = *(oarr + count);
+		if (*(oarr + count) == '\0')
 			break;
-		i++;
+		count++;
 	}
-	return (new);
+	return (narr);
 }
