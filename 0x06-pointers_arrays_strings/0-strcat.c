@@ -2,27 +2,27 @@
 #include <stdio.h>
 
 /**
- *_strcat - concatenates two strings
- *@new: new string.
- *@old: old string.
- *Return: the pointer to new.
+ *_strcat - concatenates two strings,
+ *@dest: destination.
+ *@src: source.
+ *Return: the pointer to dest.
  */
 
-char *_strcat(char *new, char *old)
+char *_strcat(char *dest, char *src)
 {
-	int i = 0, j = 0;
+	int count = 0, count2 = 0;
 
-	while (*(new + i) != '\0')
+	while (*(dest + count) != '\0')
 	{
-		i++;
+		count++;
 	}
-	while (j >= 0)
+	while (count2 >= 0)
 	{
-		*(new + i) = *(old + j);
-		if (*(old + j) == '\0')
+		*(dest + count) = *(src + count2);
+		if (*(src + count2) == '\0')
 			break;
-		i++;
-		j++;
+		count++;
+		count2++;
 	}
-	return (old);
+	return (dest);
 }
