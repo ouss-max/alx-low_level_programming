@@ -1,19 +1,15 @@
-    section     .data
-msg db 'Hello, Holberton!',0
-len equ $-msg
+SECTION .data
+msg:	db "Hello, Holberton", 0
+fmt:	db "%s", 10, 0
 
-section     .text
-global      _start
+	SECTION .text
+	extern printf
+	global main
+main:
+	mov esi, msg
+	mov edi, fmt
+	mov eax, 0
+	call printf
 
-_start:
-    ; write message to stdout
-    mov eax, 4
-    mov ebx, 1
-    mov ecx, msg
-    mov edx, len
-    int 0x80
-
-    ; exit
-    mov eax, 1
-    xor ebx, ebx
-    int 0x80
+	mov eax, 0
+	ret
