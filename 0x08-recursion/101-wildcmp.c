@@ -1,9 +1,9 @@
 #include "main.h"
 /**
- * wildcmp - compares two strings that can contain a wildCharacters
- * @s1: string 1
- * @s2: string 2
- * Return: 1 if identical 0 if not
+ * wildcmp - compares two strings with wildCharacters
+ * @s1: first string
+ * @s2: second string
+ * Return: 1 if it's a match, 0 if not
  */
 int wildcmp(char *s1, char *s2)
 {

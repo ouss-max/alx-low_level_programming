@@ -1,9 +1,9 @@
 #include <main.h>
 
 /**
- * is_prime - detects if an input number is a prime number.
- * @n: input number.
- * Return: 1 if n is a prime number. 0 if n is not a prime number.
+ * is_prime - detects if an integer is a prime number
+ * @n: input 
+ * Return: 1 if it's a prime,0 if it's not
  */
 
 

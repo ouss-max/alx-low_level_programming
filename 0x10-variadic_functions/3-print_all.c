@@ -1,10 +1,10 @@
 #include "variadic_functions.h"
 
 /**
- * print_all - prints anything
- * @format: a list of types of arguments passed to the function
+ * print_all - prints everything
+ * @format: the list of all types of arguments passed to the function
  *
- * Return: no return
+ * Return: void
  */
 
 void print_all(const char * const format, ...)
@@ -12,15 +12,15 @@ void print_all(const char * const format, ...)
 	va_list valist;
 	unsigned int i = 0, j, c = 0;
 	char *str;
-	const char t_arg[] = "cifs";
+	const char tab_argm[] = "cifs";
 
 	va_start(valist, format);
 	while (format && format[i])
 	{
 		j = 0;
-		while (t_arg[j])
+		while (tab_argm[j])
 		{
-			if (format[i] == t_arg[j] && c)
+			if (format[i] == tab_argm[j] && c)
 			{
 				printf(", ");
 				break;
